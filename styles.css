@@ -106,25 +106,7 @@ html,body
 	margin-top: 50px;
 }
 
-
-@media only screen and (min-device-width: 500px) {
-
-		#stories img {
-		height: 125px;
-		width: 125px;
-
-	}
-
-
-		#vid {
-			border-style: none;
-			margin: auto;
-		}
-
-}
-
-
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
 
 			#stories img {
 			height: 125px;
