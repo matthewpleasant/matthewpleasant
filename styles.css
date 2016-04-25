@@ -12,7 +12,7 @@ p {
 	padding-bottom: 50px;
 }
 
-#vid, #stories {
+#stories {
 	text-align: center;
 	padding: 10px;
 	border-style: solid;
@@ -21,6 +21,7 @@ p {
 }
 
 #stories img {
+    margin: 5px;
 	height: 150px;
 	width: 150px;
 
@@ -105,6 +106,7 @@ html,body
 .stuff {
 	margin-top: 50px;
 }
+
 
 @media only screen and (max-width: 500px) {
 
