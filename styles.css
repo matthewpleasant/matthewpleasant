@@ -124,11 +124,17 @@ html,body
 			}
 
 			#projects {
-				background-color: black;
+			    background-image: url("pictures/westtampa.jpg");
+			    background-size: 100%;
+			    background-repeat: no-repeat;
 			}
 
 			video {
 				display: none;
+			}
+
+			#urbanist {
+    			background-color:rgba(0,0,0,0.7)
 			}
 
 	}
