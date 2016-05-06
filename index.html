@@ -13,53 +13,41 @@
 
 <body>
 
-        <!--
-
-        <header>
-
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-
-                    <div class="navbar-header">
-
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a href="..." class="navbar-brand">Matthew Pleasant</a>
-
-                     </div><!-- navbar-header -->
-
-        <!--                <div class="collapse navbar-collapse" id="collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><h4><a href="#experience">Experience</a></h4></li>
-                                <li><h4><a href="#education">Digital Editor</a></h4></li>
-                                <li><h4><a href="#projects">Urbanist</a></h4></li>
-                            </ul>
-                        </div>
-
-                </div> <!-- container-fluid -->
-        <!--    </nav>
-
-        </header> -->
-
         <!--  Header/Intro -->
             <div id="intro">
                 <div class="container-fluid">
-                    <div class="col-xs-12">
-                        <div class="stuff">
-                            <div id="nameplate">
-                                <h1>Matthew Pleasant</h1>
-                                <h3>Journalist | Urbanist</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+                            <div class="stuff">
+                                <div class="nameplate top">
+                                    <h1>Matthew Pleasant</h1>
+                                    <h3>Journalist | Urbanist</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
-        <!--  Header/Intro end -->
+
+    <!--  Header/Intro end -->
+
+<!--
+
+    <div class="container-fluid">
+        <div class="row">
+                <nav class="col-xs-12">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                         &nbsp
+                        <li><a href="#">Resume</a></li>
+                         &nbsp
+                        <li><a href="#">Social</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+
+-->
 
 
         <!--  Experience/Intro -->
@@ -67,9 +55,13 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-                            <div class="stuff">
+                            <div class="stuff nameplate">
                             <h2>Experience</h2>
-                            <p>I've reported from South Louisiana amid the Deepwater Horizon oil spill and aftermaths of hurricanes Gustav and Ike. My stories have taken me to the unexplored corners of small town Florida. I'm drawn to stories that speak to the unique identity of a place, no matter the subject or setting. </p>
+                            <p>My nine years in journalism span the media spectrum.</p>
+
+                            <p>In South Louisiana, I told stories of residents struggling in the aftermath of the Deepwater Horizon oil spill and hurricanes Gustav and Ike.</p>
+
+                            <p>As a reporter in central Florida, I turned my focus to stories that spoke to a place's unique identity: A young boy's struggle after a deadly gang shooting, the community's reaction to new technology implemented on school buses, a family's hopes tied to a cornfield growing in the Green Swamp.</p>
                             </div>
                         </div>
                     </div>
@@ -130,9 +122,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-                            <div class="stuff">
+                            <div class="stuff nameplate">
                                 <h2>Digital editor</h2>
-                                <p>I work for ABC Action News where I write stories, produce stories and helm the station's social media. I don't like to stay at my desk (who does?) so I get out with the camera and tell stories. I'm new to video, in a way, but I love being able to tell stories this way.</p>
+                                <p>As a digital editor with ABC Action News, I cover breaking news for the station's website and mobile app. I also helm the station's social media and create video content designed specifically for a digital audience. My web development skillset is constantly growing (I designed and built the website you're reading).</p>
                             </div>
                         </div>
                     </div>
@@ -172,9 +164,9 @@
 
                     <div class="content">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3" id="urbox">
-                            <div class="stuff" id="urbanist">
+                            <div class="stuff nameplate" id="urbanist">
                                 <h2>Urbanist</h2>
-                                <p>I believe the shape and function of cities and neighborhoods should let us live our lives to the fullest. For me, this means ditching the car as much as possible, not so easy in a city like Tampa. I'm not in spandex, just a guy getting around by bike, engineering as many car-less travel as possible.</p>
+                                <p>Cities should encourage a variety of ways for residents to explore their surroundings. Residents should also be willing to make lifestyle changes to accomodate other modes of travel. For me, this often means leaving the car behind (not so easy in a city like Tampa) and engineering as many trips as possible by bike.</p>
                             </div>
                         </div>
                     </div>
@@ -184,6 +176,20 @@
     </div>              
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+          <script>
+                $(document).ready(function(){
+                  $(window).bind('scroll', function() {
+       var navHeight = $( window ).height() - 70;
+             if ($(window).scrollTop() > navHeight) {
+                 $('nav').addClass('fixed');
+             }
+             else {
+                 $('nav').removeClass('fixed');
+             }
+        });
+    });
+</script>
+
 </body>
 
 </html>

@@ -1,5 +1,21 @@
-.navbar {
-	background-color:rgba(0,0,0,0.7)
+html,body
+{
+	height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+ 
+}
+
+.top {
+	margin-top: 150px;
+}
+ 
+li {
+	display: inline;
 }
 
 header {
@@ -7,13 +23,21 @@ header {
 }
 
 p {
-	padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 	text-align: left;
 }
 
  body {
 	margin-right: 0;
 	font-family:'Roboto', sans-serif;
+}
+
+.nameplate {
+	border-style: solid;
+	border-width: 1px;
+	outline-color: white;
+	font-color: white;
 }
 
 #proud {
@@ -23,9 +47,9 @@ p {
 #stories {
 	text-align: center;
 	padding: 10px;
-	border-style: solid;
+/*	border-style: solid;
 	border-width: 1px;
-    margin: 5px;
+    margin: 5px; */
 }
 
 #stories img {
@@ -38,6 +62,10 @@ p {
 #stories div {
 	padding: 10px;
 	font-weight: bold;
+}
+
+#vid div {
+	padding: 20px;
 }
 
 h1 {
@@ -59,17 +87,11 @@ h4 {
 	padding: 10px;
 }
 
- #intro {
- 	height: 615px;
+#intro {
+ 	height: 100vh;
 	text-align: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background: url("pictures/sparklers.png");
-	background-size: cover;
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
- 	-o-background-size: cover;
-	 
+	background: #001f3f;
+	color: white;
 }
 
 #description {
@@ -105,23 +127,32 @@ h4 {
 
 #urbanist {
 	padding: 10px;
-    background-color:rgba(0,0,0,0.5)
+    background-color:rgba(0,0,0,0.5);
+    border-style: none;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
- 
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 40px; 
+	z-index: 1;
+	padding-top: 10px;
+
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: white;
+	padding-top: 10px;
+	text-align: center;
 }
 
 .stuff {
 	margin-top: 50px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
@@ -137,9 +168,10 @@ html,body
 			}
 
 			#projects {
-			    background-image: url("pictures/westtampa.jpg");
+			    background: #E8E8E8;
 			    background-size: 100%;
 			    background-repeat: no-repeat;
+			    color: black;
 			}
 
 			video {
@@ -147,7 +179,10 @@ html,body
 			}
 
 			#urbanist {
-    			background-color:rgba(0,0,0,0.7)
+				padding: 10px;
+    			background: none;
+    			color: black;
+    			border-style: solid;
 			}
 
 	}
