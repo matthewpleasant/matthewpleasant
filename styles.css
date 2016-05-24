@@ -35,9 +35,7 @@ p {
 
 .nameplate {
 	border-style: solid;
-	border-width: 1px;
-	outline-color: white;
-	font-color: white;
+	border-width: 2px;
 }
 
 #proud {
@@ -90,8 +88,10 @@ h4 {
 #intro {
  	height: 100vh;
 	text-align: center;
-	background: #001f3f;
-	color: white;
+	background-image: url("pictures/franklin.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
 }
 
 #description {
