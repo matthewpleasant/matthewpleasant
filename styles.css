@@ -33,6 +33,11 @@ p {
 	font-family:'Roboto', sans-serif;
 }
 
+#intro .nameplate {
+	background-color: white;
+	opacity: 0.9;
+}
+
 .nameplate {
 	border-style: solid;
 	border-width: 2px;
@@ -185,4 +190,4 @@ nav {
     			border-style: solid;
 			}
 
-	}
+}
