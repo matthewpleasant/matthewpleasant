@@ -41,6 +41,8 @@ p {
 .nameplate {
 	border-style: solid;
 	border-width: 2px;
+	padding: 15px;
+	margin: 20px;
 }
 
 #proud {
@@ -104,14 +106,14 @@ h4 {
 	margin: 0;
 }
 
-#education {
-	background-color: #20B2AA;
+#video {
+	background-color: white;
 	text-align: center;
 	padding-bottom: 30px;
 }
 
 #experience {
-	background-color: #00BFFF;
+	background-color: white;
 	text-align: center;
 	padding-bottom: 50px;
 } 
@@ -158,6 +160,18 @@ nav {
 .stuff {
 	margin-top: 50px;
 	text-align: center;
+}
+
+.img-circle:hover {
+	opacity: .5;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.vid:hover {
+	opacity: .5;
 }
 
 @media only screen and (max-width: 500px) {
